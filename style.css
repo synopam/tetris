@@ -109,10 +109,20 @@ button:hover{
 }
 
 .mobile-controls{
-    margin-top:25px;
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:10px;
+
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:12px;
+
+    padding:10px;
+
+    background:#111827;
+
+    z-index:999;
 }
 
 .mobile-controls button{
@@ -172,6 +182,18 @@ button:hover{
     .mobile-controls button{
         height:55px;
         font-size:24px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    body{
+        padding-bottom:180px;
+    }
+
+    .container{
+        padding-bottom:180px;
     }
 
 }
