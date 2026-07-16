@@ -109,20 +109,10 @@ button:hover{
 }
 
 .mobile-controls{
-    position:fixed;
-    left:0;
-    right:0;
-    bottom:10px;
-
+    margin-top:15px;
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:12px;
-
-    padding:10px;
-
-    background:#111827;
-
-    z-index:999;
 }
 
 .mobile-controls button{
