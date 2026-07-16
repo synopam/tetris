@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🎮 TETRIS</h1>
+        </header>
+
+        <main>
+
+            <section class="game">
+
+                <canvas id="game" width="300" height="600"></canvas>
+
+            </section>
+
+            <aside class="panel">
+
+                <div class="card">
+                    <h2>Score</h2>
+                    <p id="score">0</p>
+                </div>
+
+                <div class="card">
+                    <h2>High Score</h2>
+                    <p id="highscore">0</p>
+                </div>
+
+                <div class="card">
+                    <h2>Level</h2>
+                    <p id="level">1</p>
+                </div>
+
+                <div class="card">
+                    <h2>Lines</h2>
+                    <p id="lines">0</p>
+                </div>
+
+                <div class="card">
+                    <h2>Next</h2>
+                    <canvas id="next" width="120" height="120"></canvas>
+                </div>
+
+                <button id="pause">Pause</button>
+                <button id="restart">Restart</button>
+
+            </aside>
+
+        </main>
+
+        <!-- Kontrol HP -->
+        <div class="mobile-controls">
+
+            <button id="left">⬅️</button>
+            <button id="rotate">🔄</button>
+            <button id="right">➡️</button>
+
+            <button id="down">⬇️</button>
+            <button id="drop">⏬</button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
